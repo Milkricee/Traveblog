@@ -13,17 +13,17 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  images = ['assets/imgs/nature/1.JPG',
+  images = [
    'assets/imgs/nature/2.JPG', 
    'assets/imgs/nature/3.JPG',
     'assets/imgs/nature/4.JPG',  
     'assets/imgs/nature/5.JPG',
-    'assets/imgs/nature/6.jpg',
-    'assets/imgs/nature/7.jpg',
-    'assets/imgs/nature/8.jpg',
-    'assets/imgs/nature/9.jpg',
-    'assets/imgs/nature/10.jpg',
-    'assets/imgs/nature/11.jpg',
+    'assets/imgs/nature/6.JPG',
+    'assets/imgs/nature/7.JPG',
+    'assets/imgs/nature/8.JPG',
+    'assets/imgs/nature/9.JPG',
+    'assets/imgs/nature/10.JPG',
+    'assets/imgs/nature/11.JPG',
   ];
 
   constructor(private modalService: NgbModal) {} // NgbModal im Konstruktor injizieren
