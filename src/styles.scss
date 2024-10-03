@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+// Grundlegende Farbpalette
+$primary-color: #34495e; // Blau für Links und Header
+$secondary-color: #2ecc71; // Grün für Buttons oder Highlights
+$dark-color: #34495e; // Dunkelgrau für den Text
+$light-color: #ecf0f1; // Hellgrau für den Hintergrund
+
+// Schriftarten
+$base-font: 'Open Sans', sans-serif;
+$heading-font: 'Roboto', sans-serif;
+
+// Mixins für wiederverwendbare Stile
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+:fullscreen {
+  height: 100vh; /* Setzt die Höhe der Komponente auf 100% des Viewport-Höhe */
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  box-shadow: inset 0 1px 0 0 #ffffff;
+  background: #ffffff linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: url('/assets/cursor.cur'), auto;
+  color: #666666;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  outline: 0;
+  margin: 0 10px; // Anpassen für den Abstand zwischen den Buttons
+
+  &:hover {
+    background: $primary-color; /* Hintergrundfarbe beim Hover */
+    color: $light-color; /* Textfarbe beim Hover */
+  }
+}
+
+// Basis-Styles
+body {
+  font-family: $base-font;
+  color: $dark-color;
+  background-color: $light-color;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  
+  li {
+    display: inline;
+    margin: 0 10px;
+    
+    a {
+      text-decoration: none;
+      color: $light-color;
+      
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+main {
+  padding: 20px;
+  section {
+    margin-bottom: 20px;
+  }
+}
+
+h1, h2, h3 {
+  font-family: $heading-font;
+}
+
+
+
+html, body {
+   height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

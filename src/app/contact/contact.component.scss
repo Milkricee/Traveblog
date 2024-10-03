@@ -1,0 +1,19 @@
+
+  .parallax-section {
+    height: 100vh; // Höhe des Parallax-Elements
+    background-image: url('/assets/imgs/sunset_main.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1000;
+  }
+  
+.footer-section {
+    height: 100vh; // Oder die gewünschte Höhe
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }

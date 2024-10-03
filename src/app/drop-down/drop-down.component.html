@@ -1,0 +1,34 @@
+  
+        <div class="dropdownContainer">
+        <!-- Dropdown-Menüinhalte hier -->
+        <div class="buttoncontainer" [@menuAnimation]="menuState">
+          <button class="button" [matMenuTriggerFor]="countries" #countriesTrigger="matMenuTrigger" >Länder</button>
+          <button class="button" routerLink="contact">Kontakt</button>
+          <button class="button" routerLink="home">Fotogalerie</button>
+          <button class="button" routerLink="about_me">Über mich</button>
+
+        <div class="search-container">
+          <input type="text" placeholder="Suche..." class="search-bar">
+          <button class="search-button">Suchen</button>
+        </div>  
+
+        </div>
+        <!-- Weitere Links oder Inhalte -->
+      </div>
+
+      <!-- Button für "Länder" -->
+<mat-menu #countries="matMenu">
+<button mat-menu-item [matMenuTriggerFor]="africaMenu">Afrika</button>
+  <button mat-menu-item [matMenuTriggerFor]="southamericaMenu">Südamerika</button>
+</mat-menu>
+
+<!-- Untermenüs für die einzelnen Kontinente -->
+<mat-menu #africaMenu="matMenu">
+  <button mat-menu-item routerLink="empty">Senegal</button>
+  <button mat-menu-item routerLink="empty">Gambia</button>
+  <button mat-menu-item routerLink="empty">Marokko</button>
+</mat-menu>
+
+<mat-menu #southamericaMenu="matMenu">
+  <button mat-menu-item routerLink="colombia">Kolumbien</button>
+</mat-menu>

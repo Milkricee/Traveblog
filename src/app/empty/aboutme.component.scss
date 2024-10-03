@@ -1,0 +1,74 @@
+$primary-color: #34495e; // Blau für Links und Header
+$secondary-color: #2ecc71; // Grün für Buttons oder Highlights
+$dark-color: #34495e; // Dunkelgrau für den Text
+$light-color: #ecf0f1; // Hellgrau für den Hintergrund
+
+// Schriftarten
+$base-font: 'Open Sans', sans-serif;
+$heading-font: 'Roboto', sans-serif;
+
+.hauptnav{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: $light-color;
+  color: #34495e; 
+}
+
+.example-container {
+  width: 100%; // Volle Breite des Viewports
+  height: 100%; // Volle Höhe des Viewports
+}
+
+.seitenleiste {
+  height: 50%;
+  position: fixed; /* Hält die Seitenleiste beim Scrollen an der gleichen Stelle */
+  top: 25%; /* Abstand von der oberen Kante des Viewports */
+  left: 0; /* Abstand von der linken Kante des Viewports, passe dies an, um die Seitenleiste zu positionieren */
+  padding: 0;
+  width: 180px; /* Breite der Seitenleiste */
+  background-color: transparent; /* Transparenter Hintergrund */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Zentriert die Inhalte horizontal innerhalb der Seitenleiste */
+  border-right: 2px solid white; /* Weißer Rand auf der rechten Seite */
+  border-top-right-radius: 10px; /* Rundet nur die obere rechte Ecke ab */
+  border-bottom-right-radius: 10px; /* Rundet nur die untere rechte Ecke ab */
+  z-index: 1020; /* Stellt sicher, dass die Seitenleiste über anderen Inhalten liegt */
+}
+
+
+.seitenleiste p {
+  width: 100%; /* Nimmt die volle Breite der Seitenleiste ein */
+  text-align: center; /* Zentriert den Text horizontal */
+  margin: 40px 0 20px; /* Erhöht den oberen Rand, um den Text nach unten zu verschieben */
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: $dark-color; /* Oder eine andere Farbe, die zu deinem Design passt */
+}
+    .button {
+      background: transparent;
+      margin-top: 20px;
+      width: 100%; /* Stellt sicher, dass die Buttons die volle Breite einnehmen */
+      border: none; /* Entfernt den Rand der Buttons */
+      box-sizing: border-box; /* Bezieht Padding und Border in die Gesamtbreite des Elements ein */
+      padding: 10px 20px;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      color: $dark-color;
+
+      &:hover{
+        background:#40566d; /* Hintergrundfarbe beim Hover */
+       
+      }
+    }
+    .mat-drawer-container {
+       /* Stellt sicher, dass der Container die abgerundeten Ecken der Seitenleiste respektiert */
+      overflow: hidden; /* Verhindert, dass der Inhalt des Containers über die abgerundeten Ecken hinausgeht */
+      background-color: transparent;
+    }
+    
+  

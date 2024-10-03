@@ -1,0 +1,42 @@
+@import 'bootstrap/scss/bootstrap';
+// Grundlegende Farbpalette
+$primary-color: #34495e; // Blau für Links und Header
+$secondary-color: #2ecc71; // Grün für Buttons oder Highlights
+$dark-color: #34495e; // Dunkelgrau für den Text
+$light-color: #ecf0f1; // Hellgrau für den Hintergrund
+
+// Schriftarten
+$base-font: 'Open Sans', sans-serif;
+$heading-font: 'Roboto', sans-serif;
+
+// Mixins für wiederverwendbare Stile
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+    background: $primary-color;
+    color: $light-color;
+    @include flex-center;
+    height: 100px; // Automatische Höhe, um sich dem Inhalt anzupassen
+    position: relative; // oder 'fixed', falls der Header fest positioniert sein soll
+    z-index: 1050;
+    padding-left: 6px;
+    h1 {
+      margin: 0 auto; // Zentriert den <h1> Inhalt und gibt ihm automatischen oberen/unteren Abstand
+      padding: 0 20px; // Verhindert, dass der Text zu nahe am Rand steht
+    }
+  }
+  .logo {
+    height: 94px;
+    width: auto;
+    animation: pulse 2s infinite alternate; /* Verwenden Sie die definierte Animation "pulse" */
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); } /* Skaliert das Logo um 10% */
+    100% { transform: scale(1); }
+}

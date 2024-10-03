@@ -1,0 +1,68 @@
+$primary-color: #34495e; // Blau für Links und Header
+$secondary-color: #2ecc71; // Grün für Buttons oder Highlights
+$dark-color: #34495e; // Dunkelgrau für den Text
+$light-color: #ecf0f1; // Hellgrau für den Hintergrund
+
+// Schriftarten
+$base-font: 'Open Sans', sans-serif;
+$heading-font: 'Roboto', sans-serif;
+
+.fullscreen{
+  height: 100vh; /* Setzt die Höhe der Komponente auf 100% des Viewport-Höhe */
+  display: flex;
+  flex-direction: column;
+  z-index: 1020;
+  margin-top: 60px;
+}
+
+table {
+  width: 100%;
+  z-index: 1020;
+  margin-top: 60px;
+  height: 100vh;
+  background-color: $dark-color;
+}
+
+tr.example-detail-row {
+  height: 0;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: rgb(8, 58, 124);
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+  background: #b84444;
+}
+
+.example-element-row td {
+  border-bottom-width: 0;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+}
+
+.example-element-diagram {
+  min-width: 80px;
+  border: 2px solid rgb(147, 23, 196);
+  padding: 8px;
+  font-weight: lighter;
+  margin: 8px 0;
+  height: 104px;
+}
+
+.example-element-symbol {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+}
+
+.example-element-description {
+  padding: 16px;
+}
+
+.example-element-description-attribution {
+  opacity: 0.5;
+}

@@ -1,0 +1,11 @@
+.fullscreen-component {
+    height: 100vh; /* Setzt die Höhe der Komponente auf 100% des Viewport-Höhe */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Optional: Stelle sicher, dass der Inhalt der Komponente innerhalb des Bildschirms scrollt, falls erforderlich */
+  .fullscreen-component-content {
+    overflow-y: auto;
+  }
+  

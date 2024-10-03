@@ -1,0 +1,7 @@
+.fullscreen{
+height: 100vh; /* Setzt die Höhe der Komponente auf 100% des Viewport-Höhe */
+display: flex;
+flex-direction: column;
+z-index: 1020;
+margin-top: 60px;
+}
